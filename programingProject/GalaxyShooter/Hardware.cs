@@ -1,15 +1,17 @@
-﻿// Roberto Garcia Marcos
+﻿// Galaxy Shooter Project
+// Made by Roberto Garcia Marcos
 
 using System;
 using Tao.Sdl;
 
 namespace GalaxyShooter
-{ 
-    // This class will manage every hardware issue: screen resolution, keyboard input and some other aspects
+{
+    // This class will manage every hardware issue: screen resolution,
+    // keyboard input and some other aspects
     class Hardware
     {
-        public const int DEFAULT_WIDTH = 800;
-        public const int DEFAULT_HEIGHT = 600;
+        public const int DEFAULT_WIDTH = 1024;
+        public const int DEFAULT_HEIGHT = 512;
 
         public const string GAME_FONT = "resources/DAYPBL__.ttf";
 
@@ -58,13 +60,13 @@ namespace GalaxyShooter
             Sdl.SDL_BlitSurface(spr.GetImage(), ref source, screen, ref target);
         }
 
-        public void DrawImage(Sprite sprite, short x, short y,
+        public void DrawImage(Sprite image, short x, short y,
             short width, short height)
         {
             Sdl.SDL_Rect src = new Sdl.SDL_Rect(x, y, width, height);
-            Sdl.SDL_Rect dest = new Sdl.SDL_Rect(sprite.GetX(), sprite.GetY(),
+            Sdl.SDL_Rect dest = new Sdl.SDL_Rect(image.GetX(), image.GetY(),
                 width, height);
-            Sdl.SDL_BlitSurface(sprite.GetImage(), ref src, screen, ref dest);
+            Sdl.SDL_BlitSurface(image.GetImage(), ref src, screen, ref dest);
         }
 
         public void WriteText(string text, short x, short y,

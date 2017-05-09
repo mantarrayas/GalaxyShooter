@@ -21,6 +21,9 @@ namespace GalaxyShooter
         {
             exit = false;
         }
-        // TO DO
+        public override void Show()
+        {
+            // TO DO
+        }
     }
 }

@@ -15,7 +15,6 @@ namespace GalaxyShooter
         }
         public virtual void Show()
         {
-
         }
     }
 }

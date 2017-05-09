@@ -1,4 +1,5 @@
-﻿// Roberto Garcia Marcos
+﻿// Galaxy Shooter Project
+// Made by Roberto Garcia Marcos
 
 using System;
 using Tao.Sdl;
@@ -11,7 +12,8 @@ namespace GalaxyShooter
     {
         static void Main(string[] args)
         {
-
+            GameController controller = new GameController();
+            controller.Start();
         }
     }
 }

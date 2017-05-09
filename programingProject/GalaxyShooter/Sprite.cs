@@ -1,4 +1,5 @@
-﻿// Roberto Garcia Marcos
+﻿// Galaxy Shooter Project
+// Made by Roberto Garcia Marcos
 
 using System;
 using Tao.Sdl;
