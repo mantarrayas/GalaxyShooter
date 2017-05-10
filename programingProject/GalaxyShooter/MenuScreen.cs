@@ -7,6 +7,7 @@ namespace GalaxyShooter
 {
     /* The class for the main menu. This screen is used to select 
      * an option (play the game, high score...)
+     * NOTE: THIS CLASS IS NOT DEFINED IN THE CLASS DIAGRAM (TO DO)
     */
 
     class MenuScreen : Screen

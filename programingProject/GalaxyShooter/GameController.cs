@@ -14,7 +14,7 @@ namespace GalaxyShooter
         {
             Hardware hardware = new Hardware(Hardware.DEFAULT_WIDTH,
                 Hardware.DEFAULT_HEIGHT, 24, false);
-            CampaignScreen game = new CampaignScreen(hardware);
+            CampaignLevel game = new CampaignLevel(hardware);
             do
             {
                 hardware.ClearScreen();
